@@ -1,7 +1,7 @@
 FROM jetty:9.4.6
 
 RUN apt-get update
-RUN apt-get install -y wget zip unzip
+RUN apt-get install -y wget
 
 RUN wget https://github.com/fcrepo4/fcrepo4/releases/download/fcrepo-4.7.3/fcrepo-webapp-4.7.3.war
 RUN mv fcrepo-webapp-4.7.3.war /var/lib/jetty/webapps/fcrepo.war

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/Users/jrmerz/dev/library/dams/fcrepo-jetty-cas/java-jwt-3.1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/jrmerz/dev/library/dams/fedora-dev/WEB-INF/lib/jackson-annotations-2.8.4.jar"/>
+	<classpathentry kind="lib" path="/Users/jrmerz/dev/library/dams/fedora-dev/WEB-INF/lib/jackson-core-2.8.4.jar"/>
+	<classpathentry kind="lib" path="/Users/jrmerz/dev/library/dams/fedora-dev/WEB-INF/lib/jackson-databind-2.8.4.jar"/>
+	<classpathentry kind="lib" path="/Users/jrmerz/dev/library/dams/fedora-dev/WEB-INF/lib/jackson-datatype-jsr310-2.8.4.jar"/>
+	<classpathentry kind="lib" path="/Users/jrmerz/dev/library/dams/fedora-dev/WEB-INF/lib/jackson-jaxrs-base-2.5.4.jar"/>
+	<classpathentry kind="lib" path="/Users/jrmerz/dev/library/dams/fedora-dev/WEB-INF/lib/jackson-jaxrs-json-provider-2.5.4.jar"/>
+	<classpathentry kind="lib" path="/Users/jrmerz/dev/library/dams/fedora-dev/WEB-INF/lib/jackson-module-jaxb-annotations-2.5.4.jar"/>
+	<classpathentry kind="lib" path="/Users/jrmerz/dev/library/dams/fedora-dev/WEB-INF/lib/commons-codec-1.10.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
