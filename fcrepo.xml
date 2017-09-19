@@ -4,6 +4,7 @@
 <Configure id="fcrepo" class="org.eclipse.jetty.webapp.WebAppContext">
   <Set name="contextPath">/</Set>
   <Set name="war">/var/lib/jetty/webapps/fcrepo.war</Set>
+  <Set name="overrideDescriptor">/overlay-web.xml</Set>
 
   <Get name="securityHandler">
     <Set name="authenticator">
