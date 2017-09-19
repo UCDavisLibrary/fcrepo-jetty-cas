@@ -7,11 +7,8 @@ class MessageConsumer {
         
         stompClient.connect((sessionId) => {
             console.log('connected', sessionId);
-            stompClient.subscribe('/queue/fedora', function(body, headers){
-               console.log('Stomp Message Recieved', '/queue/fedora');
-               console.log(headers);
-               console.log(body);
-            });
+
+
             stompClient.subscribe('/topic/fedora', function(body, headers){
                 console.log('Stomp Message Recieved', '/topic/fedora');
                 console.log(headers);
