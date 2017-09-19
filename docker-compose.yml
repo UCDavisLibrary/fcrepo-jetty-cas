@@ -1,0 +1,16 @@
+
+version: '2'
+
+services:
+
+  fcrepo:
+    build: .
+    volumes:
+      - fedora-data:/fedora-data
+    ports:
+      - 8080:8080
+
+
+volumes:
+  fedora-data:
+    driver: local
