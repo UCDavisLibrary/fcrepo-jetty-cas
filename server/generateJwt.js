@@ -1,4 +1,4 @@
 var jwt = require('jsonwebtoken');
 
-var token = jwt.sign({ foo: 'bar' }, 'testtestest', {'issuer': 'library.ucdavis.edu'});
+var token = jwt.sign({ username: 'jrmerz' }, 'testtestest', {'issuer': 'library.ucdavis.edu'});
 console.log(token);

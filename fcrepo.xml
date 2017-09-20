@@ -6,16 +6,24 @@
   <Set name="war">/var/lib/jetty/webapps/fcrepo.war</Set>
   <Set name="overrideDescriptor">/overlay-web.xml</Set>
 
-  <Get name="securityHandler">
+  <!-- <Get name="securityHandler">
     <Set name="authenticator">
       <New class="org.jasig.cas.client.jetty.CasAuthenticator">
         <Set name="serverNames">cas.ucdavis.edu</Set>
         <Set name="ticketValidator">
           <New class="org.jasig.cas.client.validation.Cas20ServiceTicketValidator">
             <Arg>https://cas.ucdavis.edu/cas</Arg>
-            <!--<Set name="renew">true</Set>-->
           </New>
         </Set>
+      </New>
+    </Set>
+  </Get> -->
+
+  <Get name="securityHandler">
+    <Set name="authenticator">
+      <New class="edu.ucdavis.library.jetty.JwtAuthenticator">
+        <Set name="secret">testtestest</Set>
+        <Set name="issuer">library.ucdavis.edu</Set>
       </New>
     </Set>
   </Get>
